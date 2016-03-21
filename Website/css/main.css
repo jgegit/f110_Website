@@ -1,0 +1,387 @@
+/*MAIN CSS*/
+
+/*Fonts:*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+a{
+	color: rgb(0,153,216);
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	padding-top: 80px;
+	width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*line below h2 titles (usually) */
+hr {
+	border-top: 2px solid #eee;
+}
+
+p {
+	font-size: 18px;
+}
+
+/**************************
+	NAVBAR STUFF
+**************************/
+
+/*caret color for dropdown*/
+.caret{
+	color: rgb(0,153,216);
+}
+
+/*bg and link color of navbar dropdown list*/
+.dropdown:hover, .dropdown-menu, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>.disabled>a, .dropdown-menu>.disabled>a:focus, .dropdown-menu>.disabled>a:hover{
+	display: block;
+	background-color: rgb(0,0,0);
+	color: #fff;
+}
+
+/*dropdown colors when hovered*/
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	color: #fff;
+}
+
+/*color of navbar links when hovered*/
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	color: rgb(199,51,45);
+}
+
+/*Fix navbar to top of page*/
+.navbar{
+	position:fixed;
+}
+
+/*bg color of opened navbar list*/
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	background-color: rgb(0,0,0);
+}
+
+/*Corner navbar colors*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle, .navbar-toggle{
+	background-color: rgb(0,153,216);
+	border-color: #ffffff;
+	border: 3px solid transparent;
+}
+
+/*color when navbar links are hovered over*/
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: rgb(199,51,45);
+	font-size: 14pt;
+}
+
+/*color when nav bar links are inactive/unhovered*/
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+	font-size: 14pt;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #ffffff;
+}
+/*END corner navbar colors*/
+
+.navbar-nav>li>.dropdown-menu{
+	border-radius: 4px;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.navbar-default{
+	background-color: rgb(0,0,0);
+	border-color: rgb(199,51,45);
+}
+
+.navbar-fixed-top{
+	border-width: 0 0 2px;
+}
+
+/************************
+	Homepage
+************************/
+.btn-dark {
+    border-radius: 8px;
+	border: 3px solid;
+	border-color: transparent;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover{
+	color: rgb(255,255,255);
+	border-color: rgba(0,153,216,1);
+}
+
+.btn-light {
+    border-radius: 8px;
+	border: 3px solid;
+	border-color: transparent;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.btn-light:hover{
+	color: rgb(255, 255, 255);
+	border-color: rgba(255,255,255,1);
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#index-bg{
+	width: 100%;
+    height: 100%;
+	background: url(../assets/car_iso1.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#index-vid{
+	visibility: visible;
+	margin: auto;
+	position: absolute;
+	z-index: -99;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: auto;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+.trans-box{
+	background: rgba(213, 242, 255,0.85);
+	padding: 20px;
+}
+
+/************************
+	About
+************************/
+
+.about {
+    padding: 50px 0;
+}
+
+.about-item {
+    margin-bottom: 30px;
+}
+
+.about-sections{
+	position: relative;
+	padding-top: 50px;
+}
+
+.about-sections h2{
+	padding-top: 15px;
+}
+
+.about-item img{
+    margin: 0 auto;
+	border-radius: 10px;
+	max-height: 200px;
+}
+
+.img-about:hover {
+    opacity: 0.8;
+	max-height: 200px;
+}
+
+.height-100{
+	height: 100%;
+}
+
+.btn-dark2 {
+    border-radius: 8px;
+	border: 3px solid;
+	border-color: transparent;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark2:hover{
+	color: rgb(255,255,255);
+	border-color: rgba(0,153,216,1);
+}
+
+/**************************
+Contact Page
+**************************/
+.img-center {
+	margin: 0 auto;
+	max-height: 200px;
+}
+
+.top-pad-crew{
+	padding-top: 15px;
+}
+
+.grey-box-crew{
+	background: rgba(213, 242, 255,1);
+	margin: 2.5px;
+}
+
+.grey-box-crew:hover{
+	background: rgba(0,153,216,1);
+}
+
+.grey-box-crew:hover>h3 small, .grey-box-crew:hover>h5 a{
+	color: #fff;
+}
+
+.grey-box-crew:hover>h5 a:hover{
+	color: black;
+}
+
+/**************************
+Assignment Pages
+**************************/
+.assignment-padding{
+	padding-left: 20px;
+}
+
+.assignment-panel{
+	background-color: rgba(213,242,255,1);
+	border: 2px solid transparent;
+	border-color: rgb(0,153,216);
+}
+
+.assignment-panel h2{
+	-ms-transform: skewx(-15deg); /* IE 9 */
+    -webkit-transform: skewx(-15deg); /* Chrome, Safari, Opera */
+    transform: skewx(-15deg);
+}
+
+.instructor-panel{
+	background-color: rgba(255,255,255,1);
+	border: 2px solid transparent;
+	border-color: rgb(0,153,216);
+}
+
+/**************************
+Session Pages
+**************************/
+
+.vid-pdf-size{
+	width: 100%;
+	height: 500px;
+}
+
+/**************************
+Under Construction Page
+**************************/
+.construction-bg{
+	display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+	background: url(../assets/pitstop.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/**************************
+Full Page Image Slider
+**************************/
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/*****************************
+	Responsive settings
+*****************************/
+@media (max-width: 767px) {
+	body {
+		padding-top: 80px;
+	}
+	.height-100{
+		height: auto;
+	}
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 15px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/*Selection Coloring*/
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: rgb(0,0,0,0.4);
+}
+
+::selection {
+    color: #fff; 
+    background: rgba(0,0,0,0.4);
+}

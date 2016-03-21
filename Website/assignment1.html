@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/f110logo.ico">
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Official Home of the F1/10 Autonomous Racing Competition">
+    <meta name="author" content="Matthew A Brady">
+
+    <title>The Official Home of F1/10</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="css/main.css" rel="stylesheet">
+	
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	<nav id="navBar"></nav>
+	
+	<!--Begin Page Content-->
+	<div class="container">
+		<div class="row">
+			<!-- Assignment number and 1-sentence description -->
+			<div class="col-lg-8">
+				<div class="page-header panel panel-default assignment-padding assignment-panel">
+					<h2>Assignment 1 <small>Keyboard Control</small></h2>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<!-- Instructor name -->
+			<div class="col-lg-4">
+				<div class=" panel panel-default assignment-padding instructor-panel">
+					<h4>Instructor: <small>Paratosh Kelkar</small></h2>
+				</div>
+			</div>
+			<!-- Due date -->
+			<div class="col-lg-4">
+				<div class=" panel panel-default assignment-padding instructor-panel">
+					<h4>Due Date: <small>October 31, 2016</small></h2>
+				</div>
+			</div>
+		</div>	
+		
+		<!-- Prereqs -->
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title">Prerequisites</h3>
+					</div>
+		<!-- Necessary prereqs -->
+					<div class="panel-body">
+						Lecture 1 completed
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Overview of the assignment (short brief) -->
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="text-justify">
+					<h2>Overview</h2>
+					<p>The point of this first lab is to make sure you have setup your car correctly to the point where you can send it commands manually from your keyboard, and it will execute them. This will show you that the car runs (always a good thing) and that the wireless network for communicating with the car is correctly setup.</p>
+
+					<p>In addition to it being a basic check, keyboard controls will allow you to drive the car around and collect data through the sensors in Week 2. Once this data is acquired, you can test your perception and control algorithms on this data first, before deploying them on the car.</p>
+				</div>
+				<hr>
+			</div>
+		</div>
+		
+		<!-- Extra credit or additional notes, if applicable; remove this section if n/a-->
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">Extra Credit</h3>
+					</div>
+					<div class="panel-body text-justify">
+						Add a piece of code that will run on the car, and checks regularly for the state of the network. If the network’s status is poor (i.e. bad connection) then it issues a STOP command. At this point you haven’t yet learned how to add your own code to the Jetson and so your code won’t run on the car itself. But you will next week, and this is something you can develop and run on your own computer.
+					</div>
+				</div>
+			</div>
+		</div> 		
+		
+		<div class="row">
+		<!--Put video iframe here -->
+			<div class="col-lg-8">
+				<div class="text-center">
+					<h2 style="text-align: left;">Video Tutorial</h2>
+					<!-- Embedded tutorial video; note: keep everything after the "?" in the src URL -->
+					<iframe width="100%" height="500" src="https://www.youtube.com/embed/QYqUfMecUBE?controls=1&modestbranding=1&rel=0&showinfo=0&fs=1" frameborder="0" allowfullscreen></iframe>
+					<!-- Update this link to the actual video for this assignment -->
+					<a href="https://www.youtube.com/watch?v=QYqUfMecUBE" target="_blank">View on YouTube</a>
+				</div>
+				
+			</div>
+		<!--Instructions for lab here-->	
+			<div class="col-lg-8">
+				<div class="text-center">
+					<h2 style="text-align: left;">Instructions</h2>
+					<!-- Embedded instructions PDF -->
+					<iframe src="lab_instructions/assignment1.pdf" width="100%" height="800px"></iframe>
+					<!-- Update this link to the actual instructions for this assignment -->
+					<a href="lab_instructions/assignment1.pdf" target="_blank">Download PDF</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-8">
+				<hr>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+<!--JS - placed at end to speed page loads-->
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script> $( "#navBar" ).load("nav.html"); </script>
+	
+</html>
